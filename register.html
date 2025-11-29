@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فرم ثبت‌نام بانوی عدالت</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f5f5; padding: 20px; }
+    .container {
+      max-width: 420px; margin: auto; background: white; padding: 25px;
+      border-radius: 16px; box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    label { display:block; margin-top:10px; font-weight:600; }
+    input, button {
+      width: 100%; margin-top: 8px; padding: 10px; border-radius: 10px;
+      border: 1px solid #ddd; font-size: 15px; box-sizing: border-box;
+    }
+    button {
+      background: #028a84; color: white; border: none; cursor: pointer;
+      margin-top:16px; padding:12px; border-radius:10px; font-size:16px;
+    }
+    button:hover { opacity: 0.95; }
+    a { display:block; margin-top:15px; text-align:center; color:#028a84; text-decoration:none; }
+    .note { font-size:13px; color:#666; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="margin-top:0">فرم ثبت‌نام</h2>
+
+    <form>
+
+      <label>نام و نام خانوادگی</label>
+      <input type="text" required
+        oninvalid="this.setCustomValidity('لطفاً نام و نام خانوادگی را وارد کنید')"
+        oninput="this.setCustomValidity('')" />
+
+      <label>شماره دانشجویی</label>
+      <input type="text" required
+        oninvalid="this.setCustomValidity('لطفاً شماره دانشجویی را وارد کنید')"
+        oninput="this.setCustomValidity('')" />
+
+      <label>شماره تماس</label>
+      <input type="tel" required
+        oninvalid="this.setCustomValidity('لطفاً شماره تماس را وارد کنید')"
+        oninput="this.setCustomValidity('')" />
+
+      <label>رشته</label>
+      <input type="text" required
+        oninvalid="this.setCustomValidity('لطفاً رشته را وارد کنید')"
+        oninput="this.setCustomValidity('')" />
+
+      <label>سال ورودی</label>
+      <input type="text" required
+        oninvalid="this.setCustomValidity('لطفاً سال ورودی را وارد کنید')"
+        oninput="this.setCustomValidity('')" />
+
+      <label>آپلود عکس</label>
+      <input type="file" accept="image/*" required
+        oninvalid="this.setCustomValidity('لطفاً تصویر را آپلود کنید')"
+        oninput="this.setCustomValidity('')" />
+
+      <div class="note">تمام فیلدها اجباری است.</div>
+
+      <button type="submit">ثبت‌نام</button>
+
+    </form>
+
+    <a href="index.html">بازگشت به صفحه اصلی</a>
+
+  </div>
+</body>
+</html>
